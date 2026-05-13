@@ -7,7 +7,7 @@ export function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section - App Download Focus */}
-      <section className="relative min-h-[90vh] flex items-center justify-center pt-20 lg:pt-32 pb-10 lg:pb-20 px-4 sm:px-6 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center pt-36 md:pt-40 lg:pt-48 pb-12 lg:pb-20 px-4 sm:px-6 overflow-hidden">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white to-blue-50/30 -z-10" />
 
@@ -25,7 +25,7 @@ export function Home() {
                 <span className="text-xs sm:text-sm font-medium">Ya disponible en iOS y Android</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1] tracking-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-gray-900 leading-[1.15] tracking-tight">
                 Tu solución{' '}
                 <span className="bg-gradient-to-r from-[#2F80ED] to-blue-600 bg-clip-text text-transparent">
                   perfecta
@@ -74,8 +74,8 @@ export function Home() {
               className="relative"
             >
               {/* Phone Mockup */}
-              <div className="relative max-w-sm mx-auto">
-                <div className="bg-gray-900 rounded-[2.5rem] sm:rounded-[3rem] p-3 sm:p-4 shadow-2xl shadow-black/20 border-4 sm:border-8 border-gray-800">
+              <div className="relative w-full max-w-[280px] sm:max-w-xs md:max-w-sm mx-auto">
+                <div className="bg-gray-900 rounded-[2.5rem] sm:rounded-[3rem] p-3 shadow-2xl shadow-black/20 border-4 sm:border-8 border-gray-800">
                   <div className="bg-white rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden">
                     {/* Status Bar */}
                     <div className="bg-gray-50 px-4 sm:px-6 py-3 flex items-center justify-between text-xs">

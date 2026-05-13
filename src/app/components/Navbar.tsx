@@ -23,11 +23,15 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
       <div className="max-w-7xl mx-auto">
         <div className="bg-white/80 backdrop-blur-xl rounded-3xl border border-black/5 shadow-lg shadow-black/5 px-6 py-3">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
+          <div className="flex items-center justify-between relative">
+            <Link to="/" className="flex items-center gap-2 z-10">
               <img src="/logo.png" alt="Klick Logo" className="w-12 h-12" />
             </Link>
+
+            {/* Centered Brand Name (Mobile Only) */}
+            <div className="absolute left-1/2 -translate-x-1/2 font-bold text-xl tracking-tight text-gray-900 pointer-events-none md:hidden z-0">
+              Klick
+            </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
@@ -57,15 +61,14 @@ export function Navbar() {
               >
                 <User size={24} />
               </Link>
-              <button className="bg-[#2F80ED] text-white px-6 py-3 rounded-2xl hover:bg-[#2F80ED]/90 transition-all shadow-sm hover:shadow-md font-semibold">
+              <Link to="/registro" className="bg-[#2F80ED] text-white px-6 py-3 rounded-2xl hover:bg-[#2F80ED]/90 transition-all shadow-sm hover:shadow-md font-semibold">
                 Comenzar
-              </button>
+              </Link>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 text-gray-600 hover:text-gray-900"
+              className="md:hidden p-2 text-gray-600 hover:text-gray-900 z-10"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -117,9 +120,9 @@ export function Navbar() {
                 <User size={20} />
                 Iniciar sesión
               </Link>
-              <button className="w-full bg-[#2F80ED] text-white px-6 py-3 rounded-2xl hover:bg-[#2F80ED]/90 transition-all font-semibold mt-2">
+              <Link to="/registro" onClick={() => setIsOpen(false)} className="block text-center w-full bg-[#2F80ED] text-white px-6 py-3 rounded-2xl hover:bg-[#2F80ED]/90 transition-all font-semibold mt-2">
                 Comenzar
-              </button>
+              </Link>
             </div>
           )}
         </div>
