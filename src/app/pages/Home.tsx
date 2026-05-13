@@ -7,7 +7,7 @@ export function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section - App Download Focus */}
-      <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center pt-20 lg:pt-32 pb-10 lg:pb-20 px-4 sm:px-6 overflow-hidden">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white to-blue-50/30 -z-10" />
 
@@ -20,12 +20,12 @@ export function Home() {
               transition={{ duration: 0.8 }}
               className="space-y-8"
             >
-              <div className="inline-flex items-center gap-2 bg-blue-50 text-[#2F80ED] px-4 py-2 rounded-full border border-blue-100">
+              <div className="inline-flex items-center gap-2 bg-blue-50 text-[#2F80ED] px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-blue-100">
                 <div className="w-2 h-2 bg-[#2F80ED] rounded-full animate-pulse" />
-                <span className="text-sm">Ya disponible en iOS y Android</span>
+                <span className="text-xs sm:text-sm font-medium">Ya disponible en iOS y Android</span>
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1] tracking-tight">
                 Tu solución{' '}
                 <span className="bg-gradient-to-r from-[#2F80ED] to-blue-600 bg-clip-text text-transparent">
                   perfecta
@@ -33,7 +33,7 @@ export function Home() {
                 está a un clic
               </h1>
 
-              <p className="text-xl text-gray-600 leading-relaxed max-w-xl">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
                 Descarga Klick y conecta con profesionales verificados cerca de ti. Rápido, seguro y confiable.
               </p>
 
@@ -44,7 +44,7 @@ export function Home() {
               </div>
 
               {/* Stats */}
-              <div className="flex items-center gap-8 pt-4">
+              <div className="flex items-center gap-4 sm:gap-8 pt-2 sm:pt-4">
                 <div className="flex -space-x-3">
                   {[1, 2, 3, 4].map((i) => (
                     <div
@@ -75,10 +75,10 @@ export function Home() {
             >
               {/* Phone Mockup */}
               <div className="relative max-w-sm mx-auto">
-                <div className="bg-gray-900 rounded-[3rem] p-4 shadow-2xl shadow-black/20 border-8 border-gray-800">
-                  <div className="bg-white rounded-[2.5rem] overflow-hidden">
+                <div className="bg-gray-900 rounded-[2.5rem] sm:rounded-[3rem] p-3 sm:p-4 shadow-2xl shadow-black/20 border-4 sm:border-8 border-gray-800">
+                  <div className="bg-white rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden">
                     {/* Status Bar */}
-                    <div className="bg-gray-50 px-6 py-3 flex items-center justify-between text-xs">
+                    <div className="bg-gray-50 px-4 sm:px-6 py-3 flex items-center justify-between text-xs">
                       <span className="font-semibold">9:41</span>
                       <div className="flex items-center gap-1">
                         <div className="w-4 h-3 border border-gray-900 rounded-sm" />
@@ -86,7 +86,7 @@ export function Home() {
                     </div>
 
                     {/* App Content */}
-                    <div className="p-6 space-y-6 bg-gradient-to-b from-blue-50 to-white">
+                    <div className="p-4 sm:p-6 space-y-6 bg-gradient-to-b from-blue-50 to-white">
                       <div className="flex items-center justify-between">
                         <div>
                           <h3 className="text-2xl font-bold text-gray-900">Klick</h3>
@@ -178,10 +178,10 @@ export function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               ¿Por qué elegir Klick?
             </h2>
-            <p className="text-xl text-gray-600">Todo lo que necesitas en una sola app</p>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">Todo lo que necesitas en una sola app</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -208,7 +208,7 @@ export function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg shadow-black/5 hover:shadow-xl hover:shadow-black/10 transition-all"
+                className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-100 shadow-lg shadow-black/5 hover:shadow-xl hover:shadow-black/10 transition-all"
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-[#2F80ED] to-blue-600 rounded-2xl flex items-center justify-center mb-6">
                   <feature.icon className="w-8 h-8 text-white" />
@@ -222,13 +222,13 @@ export function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-6 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-[#2F80ED] to-blue-600 rounded-[3rem] p-12 md:p-16 text-center text-white shadow-2xl shadow-[#2F80ED]/20 relative overflow-hidden"
+            className="bg-gradient-to-br from-[#2F80ED] to-blue-600 rounded-[2rem] md:rounded-[3rem] p-6 sm:p-10 md:p-16 text-center text-white shadow-2xl shadow-[#2F80ED]/20 relative overflow-hidden"
           >
             {/* Background pattern */}
             <div className="absolute inset-0 opacity-10">
@@ -238,10 +238,10 @@ export function Home() {
 
             <div className="relative z-10">
               <Smartphone className="w-16 h-16 mx-auto mb-6" />
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
                 Descarga Klick hoy
               </h2>
-              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Únete a miles de usuarios que ya encontraron la solución perfecta
               </p>
 

@@ -8,17 +8,17 @@ export function Footer() {
 
   return (
     <footer className="bg-white border-t border-gray-100">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+      <div className="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-8 lg:mb-12 text-center sm:text-left">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2">
+            <div className="flex items-center justify-center sm:justify-start gap-2">
               <img src="/logo.png" alt="Klick Logo" className="w-24 h-24 object-contain" />
-            </Link>
-            <p className="text-gray-600 leading-relaxed">
+            </div>
+            <p className="text-gray-600 leading-relaxed mx-auto sm:mx-0 max-w-xs">
               Conectando personas con profesionales de confianza, de manera simple y segura.
             </p>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center sm:justify-start gap-3">
               <a href="#" className="w-10 h-10 bg-gray-100 hover:bg-[#2F80ED] hover:text-white rounded-full flex items-center justify-center transition-all">
                 <Facebook className="w-5 h-5" />
               </a>
@@ -64,31 +64,31 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-gray-900 mb-4">Contacto</h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2 text-gray-600">
-                <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
+              <li className="flex items-center justify-center sm:justify-start gap-2 text-gray-600">
+                <Mail className="w-5 h-5 flex-shrink-0" />
                 <a href="mailto:hola@klick.com" className="hover:text-[#2F80ED] transition-colors">
                   hola@klick.com
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-gray-600">
-                <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
+              <li className="flex items-center justify-center sm:justify-start gap-2 text-gray-600">
+                <Phone className="w-5 h-5 flex-shrink-0" />
                 <a href="tel:+524491234567" className="hover:text-[#2F80ED] transition-colors">
                   +52 449 123 4567
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-gray-600">
-                <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
+              <li className="flex items-center justify-center sm:justify-start gap-2 text-gray-600">
+                <MapPin className="w-5 h-5 flex-shrink-0" />
                 <span>Aguascalientes, México</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6 text-center">
           <p className="text-gray-600 text-sm">
             © 2026 Klick. Todos los derechos reservados.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
             <a href="#" className="text-gray-600 hover:text-[#2F80ED] text-sm transition-colors">
               Política de Privacidad
             </a>
