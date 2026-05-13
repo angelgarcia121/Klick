@@ -26,7 +26,7 @@ export function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2">
-              <img src="/logo.png" alt="Klick Logo" className="w-16 h-16 object-contain" />
+              <img src="/logo.png" alt="Klick Logo" className="w-12 h-12" />
             </Link>
 
             {/* Desktop Navigation */}

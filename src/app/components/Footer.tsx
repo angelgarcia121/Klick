@@ -93,7 +93,7 @@ export function Footer() {
               Política de Privacidad
             </a>
             <button onClick={() => setShowTerms(true)} className="text-gray-600 hover:text-[#2F80ED] text-sm transition-colors">
-              Términos de Uso
+              Términos y Condiciones
             </button>
             <a href="#" className="text-gray-600 hover:text-[#2F80ED] text-sm transition-colors">
               Cookies
