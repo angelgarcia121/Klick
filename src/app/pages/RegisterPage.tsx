@@ -55,7 +55,7 @@ export function RegisterPage() {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex justify-center">
           <Link to="/" className="flex items-center gap-2 group">
-            <img src="/logo.png" alt="Klick Logo" className="w-12 h-12 group-hover:scale-105 transition-transform" />
+            <img src="/logo.png" alt="Klick Logo" className="w-24 h-24 object-contain group-hover:scale-105 transition-transform" />
           </Link>
         </div>
         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">

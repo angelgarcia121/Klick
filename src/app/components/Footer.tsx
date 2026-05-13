@@ -13,7 +13,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <img src="/logo.png" alt="Klick Logo" className="w-12 h-12" />
+              <img src="/logo.png" alt="Klick Logo" className="w-24 h-24 object-contain" />
             </Link>
             <p className="text-gray-600 leading-relaxed">
               Conectando personas con profesionales de confianza, de manera simple y segura.
